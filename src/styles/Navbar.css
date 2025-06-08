@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  /* position: fixed;
+  top:0;
+  left:0;
+  right:0; */
+
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2e7d32;
+  padding: 0.5rem 1.5rem;
+  position: relative;
+  z-index: 1000;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #a5d6a7;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-container input {
+  padding: 0.4rem 0.7rem;
+  border-radius: 3px;
+  border: none;
+  font-size: 1rem;
+  min-width: 180px;
+}
+
+.search-container button {
+  background-color: #66bb6a;
+  border: none;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.search-container button:hover {
+  background-color: #81c784;
+}
+
+/* Hamburger button hidden on desktop */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.navbar-toggle:hover {
+  transform: scale(1.1);
+}
+
+.hamburger-icon {
+  display: inline-block;
+  line-height: 1;
+}
+
+.close-icon {
+  display: inline-block;
+  line-height: 1;
+}
+.login_btn>a{
+    margin: 30px;
+    padding: 10px;
+    margin-left: 0;
+    cursor: pointer;
+  
+}
+.login_btn.reg{
+display: none;
+}
+.dark {
+  background-color: #1a202c;
+  color: white;
+}
+.dark .nav-links a,
+.dark .search-container input {
+  color: white;
+}
+.dark-toggle-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #e2e8f0;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dark .dark-toggle-btn {
+  background: #2d3748;
+  color: #fff;
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75vw;
+    background-color: #2e7d32;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    gap: 1.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+    z-index: 1100;
+  }
+  .login_btn.reg{
+    display: block;
+   
+    
+  }
+.login_btn>span{
+    margin: 30px;
+    border: 1px solid red;
+    padding: 10px;
+    margin-left: 0;
+    cursor: pointer;
+    background-color: gray;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 1px;
+}
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin-bottom: 0;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1050;
+  }
+}
+
+/* cart count css */
+.cart-count-badge {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 4px;
+}

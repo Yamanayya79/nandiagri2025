@@ -1,0 +1,123 @@
+/* Container for dashboard content */
+.dashboard {
+  width: 80%;
+  margin-left: 17%;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+/* Page heading */
+.dashboard h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.dashboard p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Error message styling */
+.error {
+  background: rgba(255, 0, 0, 0.8);
+  padding: 12px 18px;
+  border-radius: 6px;
+  max-width: 600px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(255,0,0,0.6);
+}
+
+/* Cards container using CSS grid */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* Individual card styles */
+.card {
+  background: linear-gradient(145deg, #ff758c, #ff7eb3);
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow:
+    4px 4px 15px rgba(0, 0, 0, 0.2),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  user-select: none;
+}
+
+.card:nth-child(odd) {
+  background: linear-gradient(145deg, #43cea2, #185a9d);
+  box-shadow:
+    4px 4px 15px rgba(0, 0, 50, 0.3),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.15);
+}
+
+.card:nth-child(4n) {
+  background: linear-gradient(145deg, #f7971e, #ffd200);
+  color: #222;
+  box-shadow:
+    4px 4px 15px rgba(100, 90, 0, 0.4),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow:
+    6px 6px 20px rgba(0, 0, 0, 0.35),
+    inset 4px 4px 10px rgba(255, 255, 255, 0.3);
+  transition: all 0.25s ease;
+}
+
+/* Card heading */
+.card h2 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+/* Card number */
+.card p {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: inherit;
+  user-select: text;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dashboard {
+    width: 95%;
+    margin-left: 2.5%;
+    padding: 20px;
+  }
+
+  .dashboard h1 {
+    font-size: 2.3rem;
+  }
+
+  .card {
+    padding: 25px 20px;
+  }
+
+  .card p {
+    font-size: 2.2rem;
+  }
+}

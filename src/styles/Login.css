@@ -1,0 +1,32 @@
+.login_container{
+    margin-top: 30px;
+}
+.login_form{
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    
+    margin-bottom: 20px;
+    margin-top: 5%;
+    
+}
+.login_form>h2{
+    text-align: center;
+    border-bottom: 2px solid gray;
+    width: 80%;
+    margin-left: 10%;
+}
+.login_form>input{
+    width: 100%;
+    border-radius: 7px;
+    height: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.login_form>button{
+    width: 100%;
+}

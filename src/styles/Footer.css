@@ -1,0 +1,15 @@
+.footer_div {
+    width: 100%;
+    display: inline-block;
+    /* margin-left: 10%; */
+    margin-top: 40px;
+    border: 1px solid hsla(0, 0%, 20%, 0.2);
+    text-align: center;
+    margin-top: 30px;
+    background-color: aliceblue;
+}
+
+.footer_socillinks>a {
+    margin: 10px;
+    font-size: 40px;
+}

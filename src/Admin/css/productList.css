@@ -1,0 +1,90 @@
+.product_list_container {
+    width: 80%;
+    margin-left: 17%;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.product_list_container > table {
+    width: 100%;
+    max-width: 100%; /* Ensure the table does not exceed the container */
+    margin: 0; /* Remove left margin */
+}
+
+.product_list_container > table,
+th,
+td {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.table-container {
+    padding: 1rem;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+input {
+    width: 90%;
+    padding: 4px;
+}
+
+.edit-btn,
+.save-btn,
+.delete-btn {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.styled-table img {
+    border-radius: 4px;
+    width: 50px; /* Set a fixed width for images */
+    height: 50px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio */
+}

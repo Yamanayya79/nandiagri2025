@@ -1,0 +1,70 @@
+.cat_div {
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    gap: 20px;
+    margin-top: 2%;
+    border-radius: 10%;
+    /* border: 1px solid #ccc; */
+}
+
+.cat_subdiv {
+    /* display: flex; */
+    /* border: 1px solid #ccc; */
+    width: 105px;
+    height: 120px;
+    float: left;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10%; */
+    /* box-shadow: 1px 5px 6px; */
+}
+
+.cat_subdiv>img {
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid #224091; */
+}
+.cat_div {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 10px; /* Add some padding */
+}
+
+.cat_scroll_container {
+    display: inline-flex; /* Use flexbox for horizontal layout */
+}
+
+.cat_subdiv {
+    display: inline-block; /* Ensure each category is inline */
+    margin: 0 10px; /* Add some margin between categories */
+    text-align: center; /* Center the text */
+}
+.cat_div::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+}
+.cat_subdiv>h5{
+    font-size: 12px;
+    /* overflow-x:hidden; */
+    color: #224091;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width:725px) {
+    .cat_div {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-left: 10%; /* Center it better */
+       
+    }
+
+    .cat_subdiv {
+        width: 100px;
+        height: 80px;
+    }
+    .cat_subdiv>img {
+        width: 100%;
+        height: 70%;
+    }
+}

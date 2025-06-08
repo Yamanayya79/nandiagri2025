@@ -1,0 +1,29 @@
+<p>Rating: {product.rating}</p>
+              <p>Stock: {product.stock}</p>
+              <p>Discount: {product.discount}</p>
+              <p>Warranty: {product.warranty}</p>
+              <p>Color: {product.color}</p>
+              <p>Size: {product.size}</p>
+              <p>Material: {product.material}</p>
+              <p>Shipping: {product.shipping}</p>
+              <p>Return Policy: {product.returnpolicy}</p>
+              <p>Delivery Time: {product.deliverytime}</p>
+              <p>Seller: {product.seller}</p>
+              <p>Seller Rating: {product.sellerrating}</p>
+              <p>Seller Contact: {product.sellercontact}</p>
+              <p>Seller Address: {product.selleraddress}</p>
+              <p>Seller Email: {product.selleremail}</p>
+              <p>Seller Website: {product.sellerwebsite}</p>
+              <p>Seller Rating: {product.sellerRating}</p>
+              <p>Seller Contact: {product.sellerContact}</p>
+              <p>Seller Address: {product.sellerAddress}</p>
+
+              <p>Seller Email: {product.sellerEmail}</p>
+              <p>Seller Website: {product.sellerWebsite}</p>
+              <p>Seller Rating: {product.sellerRating}</p>
+              <p>Seller Contact: {product.sellerContact}</p>
+
+              <p>Seller Address: {product.sellerAddress}</p>
+              <p>Seller Email: {product.sellerEmail}</p>
+              <p>Seller Website: {product.sellerWebsite}</p>
+              <p>Seller Rating: {product.sellerRating}</p>

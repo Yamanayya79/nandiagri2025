@@ -1,0 +1,69 @@
+
+.product_list_continer{
+  width: 80%;
+  margin-left: 20%;
+  display: inline-block;
+}
+.page-title {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.product_list_continer{
+    margin-left: 16%;
+}
+.table-container {
+  padding: 1rem;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.styled-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+input {
+  width: 90%;
+  padding: 4px;
+}
+
+.edit-btn,
+.save-btn,
+.delete-btn {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}

@@ -1,0 +1,32 @@
+.add-coupon-container {
+  max-width: 500px;
+  margin: auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.coupon-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coupon-form input,
+.coupon-form select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.coupon-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.coupon-form button:hover {
+  background-color: #218838;
+}

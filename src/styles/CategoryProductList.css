@@ -1,0 +1,142 @@
+/* CategoryProductList.css */
+
+.Plist_container {
+  padding: 20px;
+  width: 80%;
+   margin-left: 20%;
+  max-width: 1200px;
+ border: 1px solid #ddd;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.plist-container .title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-card {
+  width: 220px;
+  /* Adjust width as needed */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  /* Prevent overflow of images */
+  position: relative;
+  /* For positioning elements */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow on hover */
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  /* Fixed height for uniformity */
+  object-fit: cover;
+  /* Maintain aspect ratio */
+}
+
+.product-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+  text-align: center;
+  /* Center align product name */
+}
+
+.product-rating {
+  color: #ffcc00;
+  /* Gold color for stars */
+  text-align: center;
+  /* Center align rating */
+}
+
+.product-price {
+  font-weight: bold;
+  text-align: center;
+  /* Center align prices */
+  margin: 10px 0;
+  /* Space between price and other elements */
+}
+
+.old-price {
+  text-decoration: line-through;
+  /* Strikethrough for old price */
+  color: #999;
+  /* Grey color for old price */
+  margin-right: 5px;
+  /* Space between old and current price */
+}
+
+.current-price {
+  color: black;
+  /* Black color for current price */
+  font-weight: bold;
+  /* Bold text for current price */
+}
+
+.discount-savings {
+  /* background-color: #d4edda; */
+  /* Light green background */
+  color: #155724;
+  /* Dark green text color */
+  font-weight: bold;
+  /* Bold text */
+  padding: 5px 10px;
+  /* Padding around the text */
+  border-radius: 5px;
+  /* Rounded corners */
+  text-align: center;
+  /* Center align savings */
+  margin-top: 10px;
+  /* Space above savings text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Shadow for depth */
+  transition: transform 0.2s ease;
+  /* Smooth transition for hover effect */
+}
+
+.discount-savings:hover {
+  transform: scale(1.05);
+  /* Slightly enlarge on hover */
+}
+
+.product_link {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: inherit;
+  /* Inherit color from parent */
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  /* Optional: Change color for better visibility */
+}
+
+.discount-savings {
+  position: absolute;
+  /* Position it over the image */
+  top: 25px;
+  left: -15px;
+  /* Adjust as needed */
+  background-color: green;
+  /* Background color for visibility */
+  color: white;
+  /* Text color */
+  rotate: -41deg;
+  padding: 5px;
+  /* Padding for aesthetics */
+  border-radius: 5px;
+  /* Rounded corners */
+}

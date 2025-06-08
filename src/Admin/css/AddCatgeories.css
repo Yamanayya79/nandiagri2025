@@ -1,0 +1,26 @@
+.add_cat_container {
+    width: 80%;
+    border: 1px solid groove;
+    margin-left: 20%;
+}
+
+.add_cat_container>h2 {
+    text-align: center;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    
+   
+}
+
+.add_cat_form>input {
+    width: 100%;
+    border-radius: 7px;
+    height: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.add_cat_form>button{
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}

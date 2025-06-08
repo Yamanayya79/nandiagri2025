@@ -1,0 +1,73 @@
+/* Main container for the Add Product form */
+.add-products-continer {
+    width: 78%;
+    margin: 80px auto; /* Center the container with margin */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Input fields styling */
+.add-products-continer input[type="text"],
+.add-products-continer input[type="number"],
+.add-products-continer textarea,
+.add-products-continer select {
+    width: 100%;
+    border-radius: 7px;
+    height: 40px; /* Increased height for better usability */
+    padding: 10px; /* Adjusted padding */
+    border: 1px solid #ccc;
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Textarea specific styling */
+.add-products-continer textarea {
+    min-height: 100px; /* Minimum height for the description */
+}
+
+/* Button styling */
+.add-products-continer button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+}
+
+/* Button hover effect */
+.add-products-continer button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Variants section styling */
+.add-products-continer h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Darker color for headings */
+}
+
+/* Variant input fields */
+.add-products-continer .variant-input {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* File input styling */
+.add-products-continer input[type="file"] {
+    margin-bottom: 15px; /* Space below file input */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .add-products-continer {
+        width: 95%; /* Full width on smaller screens */
+    }
+}

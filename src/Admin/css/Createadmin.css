@@ -1,0 +1,31 @@
+.admin_add_container{
+    width: 80%;
+    margin-left: 17%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+
+}
+.admin_add_container>h2{
+    text-align: center;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.admin_add{
+    width:100%;
+    box-sizing: border-box;
+}
+
+.admin_add_container>.admin_add {
+    width: 100%;
+
+}
+
+.admin_add_container>.admin_add>form>input {
+    width: 100%;
+
+}
+
+.admin_add_container>.admin_add>form>button {
+    width: 100%;
+}

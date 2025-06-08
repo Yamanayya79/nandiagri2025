@@ -1,0 +1,26 @@
+.user_continer_div{
+    width: 80%;
+    margin-left: 17%;
+    margin-top: 5%;
+
+}
+.user_continer_div>h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.user_card{
+    border: 1px solid red;
+}
+.user_continer_div>table{
+    width: 100%;
+}
+.user_continer_div>th,tr,td{
+border: 1px solid #ddd;
+ padding: 0.75rem;
+  /* border: 1px solid #ccc; */
+  text-align: center;
+}
+.user_continer_div>table>thead>tr>th{
+    background-color: rgb(75, 195, 75);
+}
