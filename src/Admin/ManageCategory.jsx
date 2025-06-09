@@ -14,7 +14,7 @@ const ManageCategory = () => {
     });
 
     useEffect(() => {
-        axios.get('https://agriapi2025.onrender.com//api/categories')
+        axios.get('https://agriapi2025.onrender.com/api/categories')
             .then(res => {
                 console.log("API Response:", res.data); // Log the entire response
                 // Since the response is an array, set products directly
@@ -31,7 +31,7 @@ const ManageCategory = () => {
     }, []);
 
     const handleDelete = (id) => {
-        axios.delete(`https://agriapi2025.onrender.com//api/delete-categories/${id}`)
+        axios.delete(`https://agriapi2025.onrender.com/api/delete-categories/${id}`)
             .then(res => {
                 alert('Category deleted successfully!');
                 setProducts(products.filter(product => product.id !== id));
@@ -61,7 +61,7 @@ const ManageCategory = () => {
             updatedData.append('cat_img', image);
         }
 
-        axios.put(`https://agriapi2025.onrender.com//api/update-categories/${id}`, updatedData, {
+        axios.put(`https://agriapi2025.onrender.com/api/update-categories/${id}`, updatedData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             },
@@ -111,7 +111,7 @@ const ManageCategory = () => {
                             </td>
                             <td>
                                 {data.cat_img && (
-                                    <img src={`https://agriapi2025.onrender.com//uploads/${data.cat_img}`} alt="preview" style={{ width: '60px' }} />
+                                    <img src={`https://agriapi2025.onrender.com/uploads/${data.cat_img}`} alt="preview" style={{ width: '60px' }} />
                                 )}
                                 {editProduct === data.id && (
                                     <input type='file' onChange={(e) => setImage(e.target.files[0])} />

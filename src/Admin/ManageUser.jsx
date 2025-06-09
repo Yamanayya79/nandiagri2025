@@ -9,7 +9,7 @@ const ManageUser = () => {
     const [loding, setLoding] = useState(true);
 
     useEffect(() => {
-        axios.get('https://agriapi2025.onrender.com//api/admin/users')
+        axios.get('https://agriapi2025.onrender.com/api/admin/users')
             // .then((res)=>res.json())
 
             .then((res) => {

@@ -11,7 +11,7 @@ function CategoryProductList() {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`https://agriapi2025.onrender.com//api/category-products/${id}`)
+    axios.get(`https://agriapi2025.onrender.com/api/category-products/${id}`)
       .then(res => {
         console.log("Fetched products:", res.data);
         setProducts(res.data);
@@ -23,7 +23,7 @@ function CategoryProductList() {
       });
 
     // Optional: fetch category name
-    axios.get(`https://agriapi2025.onrender.com//api/categories`)
+    axios.get(`https://agriapi2025.onrender.com/api/categories`)
       .then(res => {
         const category = res.data.find(cat => cat.id.toString() === id);
         if (category) setCategoryName(category.name);
@@ -50,7 +50,7 @@ function CategoryProductList() {
               <div className="product-card" key={product.id}>
                 <Link to={`/Listing/${product.id}`} className="product_link">
                   <img
-                    src={`https://agriapi2025.onrender.com//uploads/${product.images[0]}`}
+                    src={`https://agriapi2025.onrender.com/uploads/${product.images[0]}`}
                     alt={product.pname}
                     style={{ width: "100%", height: "150px", objectFit: "cover" }}
 

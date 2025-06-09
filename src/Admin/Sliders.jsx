@@ -30,7 +30,7 @@ const Sliders = () => {
         sendData.append('description', addcat.description);
         sendData.append('slider_img', addcat.slider_img); // Field name must match backend
 
-        axios.post('https://agriapi2025.onrender.com//api/add-slider', sendData)
+        axios.post('https://agriapi2025.onrender.com/api/add-slider', sendData)
             .then(res => {
                 alert('Slide added successfully!');
             })

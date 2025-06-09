@@ -7,7 +7,7 @@ const Feedback = () => {
     const [feedbacks, setFeedbacks] = useState([]);
 
     useEffect(() => {
-        axios.get('https://agriapi2025.onrender.com//api/feedback')
+        axios.get('https://agriapi2025.onrender.com/api/feedback')
             .then(res => setFeedbacks(res.data))
             .catch(err => console.error("Error fetching feedbacks:", err));
     }, []);

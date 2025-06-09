@@ -36,7 +36,7 @@ const Cart = () => {
                         {cartItems.map((item, index) => (
                             <div key={index} className="cart-card">
                                 <img
-                                    src={`https://agriapi2025.onrender.com//uploads/${item.images[0]?.image_name}`}
+                                    src={`https://agriapi2025.onrender.com/uploads/${item.images[0]?.image_name}`}
                                     alt={item.pname}
                                 />
                                 <div className="cart-info">

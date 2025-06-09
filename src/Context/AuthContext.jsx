@@ -44,14 +44,14 @@ export const UserProvider = ({ children }) => {
 
   // Optional: Check session on page refresh
   useEffect(() => {
-    axios.get('https://agriapi2025.onrender.com//api/check-session', { withCredentials: true })
+    axios.get('https://agriapi2025.onrender.com/api/check-session', { withCredentials: true })
       .then(res => {
         if (res.data.success) setUser(res.data.user);
       })
       .catch(() => setUser(null));
   }, []);
 //   useEffect(() => {
-//   axios.get('https://agriapi2025.onrender.com//api/check-session', { withCredentials: true })
+//   axios.get('https://agriapi2025.onrender.com/api/check-session', { withCredentials: true })
 //     .then(res => {
 //       if (res.data.success) setUser(res.data.user);
 //       else setUser(null);

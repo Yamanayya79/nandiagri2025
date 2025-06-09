@@ -14,7 +14,7 @@ const Reg = () => {
 
   const handleSendOtp = async () => {
     try {
-      const res = await fetch('https://agriapi2025.onrender.com//api/send-otp', {
+      const res = await fetch('https://agriapi2025.onrender.com/api/send-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ mnumber }),
@@ -36,7 +36,7 @@ const Reg = () => {
 
   const handleVerifyOtp = async () => {
     try {
-      const res = await fetch('https://agriapi2025.onrender.com//api/verify-otp', {
+      const res = await fetch('https://agriapi2025.onrender.com/api/verify-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ session_id: sessionId, otp }),
@@ -56,7 +56,7 @@ const Reg = () => {
 
   const handleRegister = async () => {
     try {
-      const res = await fetch('https://agriapi2025.onrender.com//api/register', {
+      const res = await fetch('https://agriapi2025.onrender.com/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ mnumber, email, password }),

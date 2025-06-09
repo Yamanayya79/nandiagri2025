@@ -17,7 +17,7 @@ const Listing = () => {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    axios.get(`https://agriapi2025.onrender.com//api/products`)
+    axios.get(`https://agriapi2025.onrender.com/api/products`)
       .then(res => {
         const products = res.data.data;
         const current = products.find(p => p.id === parseInt(id));
@@ -72,7 +72,7 @@ const Listing = () => {
       <div className="main-product">
         <div className="product-image">
           <img
-            src={`https://agriapi2025.onrender.com//uploads/${product.images[0]?.image_name}`}
+            src={`https://agriapi2025.onrender.com/uploads/${product.images[0]?.image_name}`}
             alt={product.pname}
           />
         </div>
@@ -158,7 +158,7 @@ const Listing = () => {
         <div className="similar-products">
           {similar.map(item => (
             <div key={item.id} className="similar-card">
-              <img src={`https://agriapi2025.onrender.com//uploads/${item.images[0]?.image_name}`} alt={item.pname} width={120} />
+              <img src={`https://agriapi2025.onrender.com/uploads/${item.images[0]?.image_name}`} alt={item.pname} width={120} />
               <p>{item.pname}</p>
               <p>₹{item.variants[0]?.price}</p>
               <button onClick={() => navigate(`/listing/${item.id}`)}>View</button>

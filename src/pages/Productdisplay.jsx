@@ -17,7 +17,7 @@ const Productdisplay = (props) => {
           <div className="product_card_simple" key={product.id}>
             <Link to={`/Listing/${product.id}`} className="product_link">
               <img
-                src={`https://agriapi2025.onrender.com//uploads/${product.images[0]?.image_name}`}
+                src={`https://agriapi2025.onrender.com/uploads/${product.images[0]?.image_name}`}
                 alt={product.pname}
                 className="product_image_simple"
               />

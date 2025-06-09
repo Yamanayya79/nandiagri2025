@@ -18,7 +18,7 @@ const ManageOrders = () => {
   });
 
   useEffect(() => {
-    axios.get('https://agriapi2025.onrender.com//api/orders')
+    axios.get('https://agriapi2025.onrender.com/api/orders')
       .then(res => setOrders(res.data.data))
       .catch(err => {
         console.error("Error fetching data:", err);
@@ -45,7 +45,7 @@ const ManageOrders = () => {
   };
 
   const handleUpdate = (id) => {
-    axios.put(`https://agriapi2025.onrender.com//update-order/${id}`, formValues)
+    axios.put(`https://agriapi2025.onrender.com/update-order/${id}`, formValues)
       .then(() => {
         alert('Order updated successfully');
         setOrders(orders.map(order => (
@@ -60,7 +60,7 @@ const ManageOrders = () => {
   };
 
   const handleDelete = (id) => {
-    axios.delete(`https://agriapi2025.onrender.com//api/delete-order/${id}`)
+    axios.delete(`https://agriapi2025.onrender.com/api/delete-order/${id}`)
       .then(() => {
         alert('Order Deleted successfully!');
         setOrders(orders.filter(order => order.id !== id));

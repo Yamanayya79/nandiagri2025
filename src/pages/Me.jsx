@@ -23,7 +23,7 @@ const Me = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`https://agriapi2025.onrender.com//api/wallet/${user.id}`)
+      fetch(`https://agriapi2025.onrender.com/api/wallet/${user.id}`)
         .then(res => res.json())
         .then(data => setWallet(data));
     }
@@ -31,7 +31,7 @@ const Me = () => {
 
  const handleLogout = async () => {
     try {
-      await axios.post('https://agriapi2025.onrender.com//api/logout', {}, { withCredentials: true });
+      await axios.post('https://agriapi2025.onrender.com/api/logout', {}, { withCredentials: true });
       alert('Logout Successful!')
       setUser(null);
       
@@ -43,7 +43,7 @@ const Me = () => {
 
   const handleEditSave = async () => {
     try {
-      const res = await fetch('https://agriapi2025.onrender.com//api/update-profile', {
+      const res = await fetch('https://agriapi2025.onrender.com/api/update-profile', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -72,7 +72,7 @@ const Me = () => {
   const handlePasswordChange = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('https://agriapi2025.onrender.com//api/change-password', {
+      const res = await fetch('https://agriapi2025.onrender.com/api/change-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

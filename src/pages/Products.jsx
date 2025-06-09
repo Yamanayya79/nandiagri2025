@@ -4,7 +4,7 @@ import Productdisplay from './Productdisplay';
 import '../styles/Products.css'
 
 
-const purl = 'https://agriapi2025.onrender.com//api/products';
+const purl = 'https://agriapi2025.onrender.com/api/products';
 
 const Products = () => {
   const [product, setProduct] = useState([]);

@@ -10,7 +10,7 @@ const Wishlist = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`https://agriapi2025.onrender.com//api/wishlist/${user.id}`)
+      fetch(`https://agriapi2025.onrender.com/api/wishlist/${user.id}`)
         .then(res => res.json())
         .then(data => setWishlist(data))
         .catch(err => console.error("Error fetching wishlist:", err));
@@ -19,7 +19,7 @@ const Wishlist = () => {
 
   const removeFromWishlist = async (productId) => {
     try {
-      await fetch(`https://agriapi2025.onrender.com//api/wishlist/remove`, {
+      await fetch(`https://agriapi2025.onrender.com/api/wishlist/remove`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ const Wishlist = () => {
           {wishlist.map(product => (
             <div key={product.id} className="wishlist-item">
               <img
-                src={`https://agriapi2025.onrender.com//uploads/${product.image}`}
+                src={`https://agriapi2025.onrender.com/uploads/${product.image}`}
                 alt={product.pname}
                 className="product-image"
               />

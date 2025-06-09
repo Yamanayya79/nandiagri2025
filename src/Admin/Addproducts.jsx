@@ -17,7 +17,7 @@ const Addproducts = () => {
 
   useEffect(() => {
     // Fetch categories
-    axios.get('https://agriapi2025.onrender.com//api/categories')
+    axios.get('https://agriapi2025.onrender.com/api/categories')
       .then(res => setCategories(res.data))
       .catch(err => console.error("Error loading categories", err));
   }, []);
@@ -51,7 +51,7 @@ const Addproducts = () => {
     images.forEach((img) => formData.append('images', img));
 
     try {
-      const res = await axios.post('https://agriapi2025.onrender.com//api/add-product', formData, {
+      const res = await axios.post('https://agriapi2025.onrender.com/api/add-product', formData, {
         withCredentials: true,
         headers: {
           'Content-Type': 'multipart/form-data'
@@ -67,7 +67,7 @@ const Addproducts = () => {
 
 
 // useEffect(() => {
-//   axios.get('https://agriapi2025.onrender.com//api/admin/check-session', { withCredentials: true })
+//   axios.get('https://agriapi2025.onrender.com/api/admin/check-session', { withCredentials: true })
 //     .then(res => {
 //       if (!res.data.success) {
 //         navigate('/admin/login'); // If not logged in, redirect

@@ -31,7 +31,7 @@ const AddCategories = () => {
         sendData.append('cat_des', addcat.cat_des);
         sendData.append('cat_img', addcat.cat_img); // Field name must match backend
 
-        axios.post('https://agriapi2025.onrender.com//api/add-category', sendData)
+        axios.post('https://agriapi2025.onrender.com/api/add-category', sendData)
             .then(res => {
                 alert('Category added successfully!');
             })

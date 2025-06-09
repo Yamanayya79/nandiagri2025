@@ -18,7 +18,7 @@ function CategoryWiseProducts() {
 
 useEffect(() => {
   if (user) {
-    axios.get(`https://agriapi2025.onrender.com//api/wishlist/${user.id}`)
+    axios.get(`https://agriapi2025.onrender.com/api/wishlist/${user.id}`)
       .then(res => {
         const wishlistIds = res.data.map(item => item.id); // assuming backend sends full product list
         setWishlist(wishlistIds);
@@ -30,7 +30,7 @@ useEffect(() => {
 
 
   useEffect(() => {
-    axios.get("https://agriapi2025.onrender.com//api/categories-products")
+    axios.get("https://agriapi2025.onrender.com/api/categories-products")
       .then(res => {
         const filtered = res.data.filter(cat => cat.products && cat.products.length > 0);
 
@@ -104,7 +104,7 @@ useEffect(() => {
   }
 
   // Call API to add to wishlist
-  axios.post('https://agriapi2025.onrender.com//api/wishlist/add', {
+  axios.post('https://agriapi2025.onrender.com/api/wishlist/add', {
     user_id: user.id,
     product_id: productId
   })
@@ -213,7 +213,7 @@ useEffect(() => {
                           className="cwp_img"
                           src={
                             product.images && product.images.length > 0
-                              ? `https://agriapi2025.onrender.com//uploads/${product.images[0]}`
+                              ? `https://agriapi2025.onrender.com/uploads/${product.images[0]}`
                               : "https://via.placeholder.com/300x200?text=No+Image"
                           }
                           loading="lazy"

@@ -12,7 +12,7 @@ const ProductList = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const res = await axios.get('https://agriapi2025.onrender.com//api/products');
+                const res = await axios.get('https://agriapi2025.onrender.com/api/products');
                 setProducts(res.data.data);
             } catch (err) {
                 console.error("Fetch error:", err);
@@ -39,11 +39,11 @@ const ProductList = () => {
         if (image) formData.append('image', image);
 
         try {
-            await axios.put(`https://agriapi2025.onrender.com//api/update-variant`, formData);
+            await axios.put(`https://agriapi2025.onrender.com/api/update-variant`, formData);
             alert("Variant updated");
             setEditVariantId(null);
             // Refresh data
-            const res = await axios.get('https://agriapi2025.onrender.com//api/products');
+            const res = await axios.get('https://agriapi2025.onrender.com/api/products');
             setProducts(res.data.data);
         } catch (err) {
             console.error(err);
@@ -53,7 +53,7 @@ const ProductList = () => {
 
     const handleDelete = async (variantId) => {
         try {
-            await axios.delete(`https://agriapi2025.onrender.com//api/delete-variant`);
+            await axios.delete(`https://agriapi2025.onrender.com/api/delete-variant`);
             alert("Variant deleted");
             setProducts(prev => prev.map(p => ({
                 ...p,
@@ -123,7 +123,7 @@ const ProductList = () => {
                                 </td>
                                 <td>
                                     <img
-                                        src={`https://agriapi2025.onrender.com//uploads/${variant.image}`}
+                                        src={`https://agriapi2025.onrender.com/uploads/${variant.image}`}
                                         alt="Variant"
                                         style={{ width: 50, height: 50, objectFit: 'cover' }}
                                     />

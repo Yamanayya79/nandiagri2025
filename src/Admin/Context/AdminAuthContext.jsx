@@ -8,7 +8,7 @@ export const AdminProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get('https://agriapi2025.onrender.com//api/admin/check-session', { withCredentials: true })
+      .get('https://agriapi2025.onrender.com/api/admin/check-session', { withCredentials: true })
       .then(res => {
         if (res.data.loggedIn || res.data.success) {
           setAdmin(res.data.admin);
@@ -23,7 +23,7 @@ export const AdminProvider = ({ children }) => {
   const loginAsAdmin = async (email, password) => {
     try {
       const response = await axios.post(
-        'https://agriapi2025.onrender.com//api/admin/login',
+        'https://agriapi2025.onrender.com/api/admin/login',
         { email, password },
         { withCredentials: true }
       );
@@ -43,7 +43,7 @@ export const AdminProvider = ({ children }) => {
 
   const logoutAdmin = async () => {
     try {
-      await axios.post('https://agriapi2025.onrender.com//api/admin/logout', {}, { withCredentials: true });
+      await axios.post('https://agriapi2025.onrender.com/api/admin/logout', {}, { withCredentials: true });
     } catch (error) {
       console.error('Admin logout error:', error);
     } finally {

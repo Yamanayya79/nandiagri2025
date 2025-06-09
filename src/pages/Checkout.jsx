@@ -66,7 +66,7 @@ const Checkout = () => {
     }
 
     try {
-      const res = await axios.post("https://agriapi2025.onrender.com//api/validate-coupon", {
+      const res = await axios.post("https://agriapi2025.onrender.com/api/validate-coupon", {
         code: couponCode,
         totalAmount, // Send the total amount for validation
       });
@@ -113,7 +113,7 @@ const Checkout = () => {
     }));
 
     try {
-      const response = await fetch('https://agriapi2025.onrender.com//api/place-orders', {
+      const response = await fetch('https://agriapi2025.onrender.com/api/place-orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -194,7 +194,7 @@ const Checkout = () => {
           const variant = item.selectedVariant;
           return (
             <div key={index} className="order-item">
-              <img src={`https://agriapi2025.onrender.com//uploads/${item.images[0]?.image_name}`} alt={item.pname} />
+              <img src={`https://agriapi2025.onrender.com/uploads/${item.images[0]?.image_name}`} alt={item.pname} />
               <div>
                 <p>{item.pname} ({variant?.quantity})</p>
                 <p>₹{variant?.price}</p>

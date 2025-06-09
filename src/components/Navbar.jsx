@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('https://agriapi2025.onrender.com//api/logout', {}, { withCredentials: true });
+      await axios.post('https://agriapi2025.onrender.com/api/logout', {}, { withCredentials: true });
       setUser(null);
       navigate('/');
     } catch (err) {

@@ -20,7 +20,7 @@ const MyOrders = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://agriapi2025.onrender.com//api/my-orders?phone=${encodeURIComponent(user.mnumber)}`
+          `https://agriapi2025.onrender.com/api/my-orders?phone=${encodeURIComponent(user.mnumber)}`
         );
         const data = await response.json();
 

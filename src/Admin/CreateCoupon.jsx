@@ -23,7 +23,7 @@ const CreateCoupon = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post('https://agriapi2025.onrender.com//api/add-coupon', formData);
+      const res = await axios.post('https://agriapi2025.onrender.com/api/add-coupon', formData);
       alert('Coupon added successfully!');
       setFormData({
         code: '',

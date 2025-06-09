@@ -17,7 +17,7 @@ const Search_orders = () => {
     setOrders([]);
 
     try {
-      const response = await fetch(`https://agriapi2025.onrender.com//api/my-orders?phone=${encodeURIComponent(phone)}`);
+      const response = await fetch(`https://agriapi2025.onrender.com/api/my-orders?phone=${encodeURIComponent(phone)}`);
       if (!response.ok) {
         if (response.status === 404) {
           setOrders([]);

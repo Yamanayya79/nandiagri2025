@@ -8,7 +8,7 @@ const Catgery = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        axios.get('https://agriapi2025.onrender.com//api/categories')
+        axios.get('https://agriapi2025.onrender.com/api/categories')
             .then(res => setCategories(res.data))
             .catch(err => console.log(err));
     }, []);
@@ -63,7 +63,7 @@ const Catgery = () => {
                 {categories.map((data) => (
                     <Link to={`/Listing/${data.id}`}>
                         <div className='cat_subdiv' key={data.id}>
-                            <img src={`https://agriapi2025.onrender.com//uploads/${data.cat_img}`} alt={data.name} className="w-full h-32 object-cover rounded" />
+                            <img src={`https://agriapi2025.onrender.com/uploads/${data.cat_img}`} alt={data.name} className="w-full h-32 object-cover rounded" />
 
                             <h5>{data.name}</h5>
 

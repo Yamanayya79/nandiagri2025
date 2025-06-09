@@ -25,7 +25,7 @@ const Dashboard = () => {
     // /api/stats/total-slide
     useEffect(() => {
         // Fetch total products
-        axios.get('https://agriapi2025.onrender.com//api/total-products')
+        axios.get('https://agriapi2025.onrender.com/api/total-products')
             .then(res => {
                 setTotalProducts(res.data.total); // Adjust based on your API response structure
             })
@@ -34,7 +34,7 @@ const Dashboard = () => {
                 setError("Failed to fetch total products");
             });
         // Fetch today registered/ joined userd
-        axios.get('https://agriapi2025.onrender.com//api/total-users-today')
+        axios.get('https://agriapi2025.onrender.com/api/total-users-today')
             .then(res => {
                 setTodayJoin(res.data.total); // Adjust based on your API response structure
             })
@@ -44,7 +44,7 @@ const Dashboard = () => {
             });
 
         // Fetch total users
-        axios.get('https://agriapi2025.onrender.com//api/stats/total-users')
+        axios.get('https://agriapi2025.onrender.com/api/stats/total-users')
             .then(res => {
                 setTotalUsers(res.data.total); // Adjust based on your API response structure
             })
@@ -54,7 +54,7 @@ const Dashboard = () => {
             });
 
         // Fetch total orders
-        axios.get('https://agriapi2025.onrender.com//api/stats/total-orders')
+        axios.get('https://agriapi2025.onrender.com/api/stats/total-orders')
             .then(res => {
                 setTotalOrders(res.data.total); // Adjust based on your API response structure
             })
@@ -63,7 +63,7 @@ const Dashboard = () => {
                 setError("Failed to fetch total orders");
             });
         // fetch today total orders
-        axios.get('https://agriapi2025.onrender.com//api/stats/orders-today')
+        axios.get('https://agriapi2025.onrender.com/api/stats/orders-today')
             .then(res => {
                 setTodayOrders(res.data.total); // Adjust based on your API response structure
             })
@@ -72,7 +72,7 @@ const Dashboard = () => {
                 setError("Failed to fetch today orders");
             });
         // fetch today total cancaled
-        axios.get('https://agriapi2025.onrender.com//api/stats/orders-cancelled')
+        axios.get('https://agriapi2025.onrender.com/api/stats/orders-cancelled')
             .then(res => {
                 setcancelled(res.data.total); // Adjust based on your API response structure
             })
@@ -81,7 +81,7 @@ const Dashboard = () => {
                 setError("Failed to fetch total orders cancelled");
             });
         // fetch  total category 
-        axios.get('https://agriapi2025.onrender.com//api/stats/total-category')
+        axios.get('https://agriapi2025.onrender.com/api/stats/total-category')
             .then(res => {
                 setCategory(res.data.total); // Adjust based on your API response structure
             })
@@ -90,7 +90,7 @@ const Dashboard = () => {
                 setError("Failed to fetch total orders cancelled");
             });
         // fetch  total  Slide
-        axios.get('https://agriapi2025.onrender.com//api/stats/total-slide')
+        axios.get('https://agriapi2025.onrender.com/api/stats/total-slide')
             .then(res => {
                 setTotalSlide(res.data.total); // Adjust based on your API response structure
             })

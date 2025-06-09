@@ -13,7 +13,7 @@ const ThankYou = () => {
 
   useEffect(() => {
     if (orderId) {
-      axios.get(`https://agriapi2025.onrender.com//api/order/${orderId}`)
+      axios.get(`https://agriapi2025.onrender.com/api/order/${orderId}`)
         .then((res) => {
           setOrder(res.data.order);
           setItems(res.data.items);
@@ -74,7 +74,7 @@ const downloadPDF = () => {
           <div className="order-items">
             {items.map((item, idx) => (
               <div className="item-card" key={idx}>
-                <img src={`https://agriapi2025.onrender.com//uploads/${item.image}`} alt={item.pname} />
+                <img src={`https://agriapi2025.onrender.com/uploads/${item.image}`} alt={item.pname} />
                 <div>
                   <p><strong>{item.pname}</strong></p>
                   <p>Qty: {item.quantity}</p>

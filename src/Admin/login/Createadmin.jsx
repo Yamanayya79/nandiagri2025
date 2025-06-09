@@ -26,7 +26,7 @@ const Createadmin = () => {
         e.preventDefault(); // Prevent the default form submission behavior
         try {
             const res = await axios.post(
-                'https://agriapi2025.onrender.com//api/admin/add',
+                'https://agriapi2025.onrender.com/api/admin/add',
                 {
                     name: formdata.name, // Ensure name is included
                     email: formdata.email,

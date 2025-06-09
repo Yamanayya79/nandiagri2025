@@ -21,7 +21,7 @@ const ContactUs = () => {
         
       
 
-        axios.post('https://agriapi2025.onrender.com//api/feedback', formData)
+        axios.post('https://agriapi2025.onrender.com/api/feedback', formData)
             .then(res => {
                 alert('Feedback added successfully!');
                 // Reset form after submission

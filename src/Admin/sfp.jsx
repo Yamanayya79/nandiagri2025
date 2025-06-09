@@ -13,7 +13,7 @@ const MyOrders = () => {
     setLoading(true);
 
     try {
-      let url = 'https://agriapi2025.onrender.com//api/my-orders';
+      let url = 'https://agriapi2025.onrender.com/api/my-orders';
       if (fetchMode === 'byPhone') {
         if (!phone.trim()) {
           setError('Please enter a phone number');

@@ -23,7 +23,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        'https://agriapi2025.onrender.com//api/login',
+        'https://agriapi2025.onrender.com/api/login',
         {
           identifier: formData.identifier,
           password: formData.password,

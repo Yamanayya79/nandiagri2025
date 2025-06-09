@@ -29,7 +29,7 @@ import { Link } from 'react-router-dom';
 const Slider = () => {
     const [slide, setSlide] = useState([]);
     useEffect(() => {
-        axios.get('https://agriapi2025.onrender.com//api/slides')
+        axios.get('https://agriapi2025.onrender.com/api/slides')
             .then(res => setSlide(res.data))
             .catch(err => console.log(err));
     })
@@ -53,7 +53,7 @@ const Slider = () => {
                         className={`slide ${index === currentSlide ? 'active' : ''}`}
                         key={slide.id}
                     >
-                        <img src={`https://agriapi2025.onrender.com//uploads/${slide.slider_img}`} alt={slide.title} />
+                        <img src={`https://agriapi2025.onrender.com/uploads/${slide.slider_img}`} alt={slide.title} />
                         <div className="text">
                             {/* <h2>{slide.title}</h2> */}
 
